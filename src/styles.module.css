@@ -1,0 +1,39 @@
+/* styles.module.css */
+
+/* Apply styles to the entire page */
+motion.div {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+motion.div h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Add additional styles as needed */
