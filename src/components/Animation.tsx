@@ -70,8 +70,8 @@ export default function Animation() {
 
   return (
     <div className="scroll-animation">
-      <div className="scroll-text flex justify-center items-center text-sm sm:text-sm lg:text-3xl">
-        <h2>Woof Woof</h2>
+      <div className="scroll-text flex justify-center items-center">
+        <h2 className="text-[160px]">Woof Woof</h2>
       </div>
       <div className="animation-content flex flex-col md:flex-row">
         <div className="image">
