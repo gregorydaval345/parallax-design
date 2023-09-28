@@ -1,10 +1,14 @@
-import ParaScreen from "@/components/ParaScreen";
-import FramerScreen from "@/components/FramerScreen";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Caprasimo } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// Font Family Caprasimo declared globally and rendered for all components
+// Can be more dynamic to accommodate other fonts: tailwind.config.ts
+const caprasimo = Caprasimo({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ParaScreen />
-        {children}
-      </body>
+      <body className={caprasimo.className}>{children}</body>
     </html>
   );
 }
